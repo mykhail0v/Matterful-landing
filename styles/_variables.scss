@@ -1,0 +1,32 @@
+:root {
+    --color-blue: #9FBDD9;
+    --color-brown: #B48C65;
+    --color-light-brown: #DFD0A9;
+    --color-green: #90BE73;
+
+    --color-dark: #000;
+    --color-dark-alt: #393532;
+    --color-light: #FFF;
+    --color-light-alt: #F4F4F4;
+    --color-gray: #888;
+    --color-light-gray: #CCC;
+
+    --color-placeholder: #EEE;
+    --color-logo: #231F20;
+    --color-border: #D8D8D8;
+
+    --border: 1px, solid var(--color-border);     
+    --border-radius: 8px;
+    --border-radius-top: 8px 8px 0 0;
+
+    --font-family-base: "Montserrat";
+    --font-family-accent: "Playfair Display";
+
+    --container-max-width: 1920px;
+    --container-width: 1200;
+
+    --input-height: 59px;
+    --button-height: 56px; 
+    
+    --transition-duration: 0.2s;
+}
