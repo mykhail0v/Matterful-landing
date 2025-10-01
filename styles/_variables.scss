@@ -15,7 +15,7 @@
     --color-logo: #231F20;
     --color-border: #D8D8D8;
 
-    --border: 1px, solid var(--color-border);     
+    --border: 1px solid var(--color-border);     
     --border-radius: 8px;
     --border-radius-top: 8px 8px 0 0;
 
@@ -23,7 +23,8 @@
     --font-family-accent: "Playfair Display";
 
     --container-max-width: 1920px;
-    --container-width: 1200;
+    --container-narrow-max-width: 1200px;
+    --container-padding-x: 20px;
 
     --input-height: 59px;
     --button-height: 56px; 
