@@ -258,14 +258,105 @@ svg * {
   --color-placeholder: #EEE;
   --color-logo: #231F20;
   --color-border: #D8D8D8;
-  --border: 1px, solid var(--color-border);
+  --border: 1px solid var(--color-border);
   --border-radius: 8px;
   --border-radius-top: 8px 8px 0 0;
   --font-family-base: "Montserrat";
   --font-family-accent: "Playfair Display";
   --container-max-width: 1920px;
-  --container-width: 1200;
+  --container-narrow-max-width: 1200px;
+  --container-padding-x: 20px;
   --input-height: 59px;
   --button-height: 56px;
   --transition-duration: 0.2s;
+}
+
+.container {
+  max-width: calc(var(--container-max-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+body {
+  font-size: clamp(16px, 0.9375vw, 18px);
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-dark-alt);
+}
+
+a,
+button,
+input,
+textarea, svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: clamp(32px, 1.875vw, 36px);
+  line-height: 1.16;
+}
+
+h3, .h3 {
+  font-size: clamp(26px, 1.5625vw, 30px);
+  line-height: 1.33;
+}
+
+h4, .h4 {
+  font-size: clamp(18px, 1.0416666667vw, 20px);
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 14px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: var(--color-light-alt);
+}
+@media (max-width: 767px) {
+  .header__inner {
+    padding-block: 30px;
+    row-gap: 5px;
+  }
+}
+.header__logo svg {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .header__logo svg {
+    max-width: 300px;
+  }
+}
+.header__description {
+  max-width: 670px;
+  line-height: 1.66;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

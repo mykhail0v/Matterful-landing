@@ -1,0 +1,32 @@
+.header {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 14px;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        background-color: var(--color-light-alt);
+
+        @include mobile {
+            padding-block: 30px;
+            row-gap: 5px;
+        }
+    }
+
+    &__logo svg{
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+
+        @include mobile{
+            max-width: 300px;
+        }
+    }
+
+    &__description {
+        max-width: 670px;
+        line-height: 1.66;
+        text-align: center;
+    }
+}
