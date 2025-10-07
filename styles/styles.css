@@ -290,6 +290,10 @@ svg * {
   overflow: hidden !important;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-size: clamp(16px, 0.9375vw, 18px);
   font-family: var(--font-family-base);
@@ -359,4 +363,37 @@ h4, .h4 {
   max-width: 670px;
   line-height: 1.66;
   text-align: center;
+}
+
+.hero {
+  position: relative;
+  background: url(/images/hero-bg.png) lightgray 0px 0px/100% 100% no-repeat;
+  background-size: cover;
+  height: 530px;
+}
+.hero__subtitle {
+  color: var(--color-gray);
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.hero__body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 567px;
+  margin-top: 163px;
+  margin-left: 204px;
+  padding-block: 32px;
+  padding-left: 15px;
+}
+@media (max-width: 1023px) {
+  .hero__body {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+}
+.hero__title:not(:last-child) {
+  margin-bottom: 11px;
 }/*# sourceMappingURL=styles.css.map */

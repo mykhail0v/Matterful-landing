@@ -1,0 +1,36 @@
+.hero{
+    position: relative;
+    background: url(/images/hero-bg.png) lightgray 0px 0px / 100% 100% no-repeat;
+    background-size: cover;
+    height: 530px;
+
+    &__subtitle {        
+    color: var(--color-gray);
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 700;
+    }
+
+    &__body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 567px;
+        margin-top: 163px;
+        margin-left: 204px;
+        padding-block: 32px;
+        padding-left: 15px;
+
+        @include tablet {
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+        }
+    }
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+    }
+}
